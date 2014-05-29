@@ -2,13 +2,17 @@
 "framerate":24,
 "images":["assets.png"],
 "frames":[
-    [182, 2, 98, 98, 0, 1, 1],
+    [362, 2, 98, 98, 0, 49, 49],
+    [464, 2, 90, 90, 0, 45, 45],
     [2, 2, 176, 176, 0, 0, 0],
-    [284, 2, 104, 28, 0, -2, -4]
+    [182, 2, 176, 176, 0, 0, 0],
+    [558, 2, 115, 28, 0, -2, -4]
 ],
 "animations":{
-    "label": {"frames": [2], "speed": 1},
-    "dock": {"frames": [1], "speed": 1},
-    "circle": {"frames": [0], "speed": 1}
+    "label": {"frames": [4], "speed": 1},
+    "dock2": {"frames": [3], "speed": 1},
+    "draggable1": {"frames": [0], "speed": 1},
+    "draggable2": {"frames": [1], "speed": 1},
+    "dock1": {"frames": [2], "speed": 1}
 }
 }
