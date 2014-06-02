@@ -1,6 +1,8 @@
 var DragDropBehaviour = function(draggable, target) {
     // does the piece snap back if not placed?
     var snapBack = true;
+    // is the piece placed?
+    var placed = false;
 
     // starting location of draggable object
     var startX = draggable.x;
@@ -20,6 +22,9 @@ var DragDropBehaviour = function(draggable, target) {
     };
     this.setSnapBack = function(value) {
         snapBack = value;
+    };
+    this.getPlaced = function() {
+        return placed;
     };
 
     // ------------------------------- Event Handlers
@@ -51,6 +56,7 @@ var DragDropBehaviour = function(draggable, target) {
                 // snap to location of target
                 draggable.x = target.x;
                 draggable.y = target.y;
+                placed = true;
                 draggable.dispatchEvent(eventPlaced);
             } else {
                 if (snapBack) {
@@ -59,6 +65,7 @@ var DragDropBehaviour = function(draggable, target) {
                     draggable.y = startY;
                     draggable.dispatchEvent(eventSnapped);
                 }
+                placed = false;
             }
         }
     }
