@@ -7,3 +7,18 @@ body {
 	font-size: 11px;
 	color: #000000;
 }
+
+/* stops the I select text cursor from appearing in your game when you drag and drop */
+* {
+    user-select: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+}
+
+::selection,
+::-moz-selection {
+    background: transparent;
+    color: inherit;
+}

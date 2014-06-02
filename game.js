@@ -2,17 +2,6 @@
 // Sean Morrow
 // May 28, 2014
 
-// REFERENCE : http://www.createjs.com/tutorials/Mouse%20Interaction/
-/*
-Container.getObjectUnderPoint() returns the top most display object under the specified point.
-Container.getObjectsUnderPoint() returns all display objects under the specified point.
-DisplayObject.hitTest() returns true if the specified point in the display object is non-transparent.
-*/
-
-// TODO switch out graphics to be more interesting - may as well use drawing API for what I have
-// TODO create reusable object
-// TODO add collision detection with hitTest()
-
 // game variables
 var stage = null;
 var canvas = null;
@@ -47,13 +36,11 @@ var manifest = [
         }
     },
     {
-        //src:"lib/PlacedSound.mp3|lib/PlacedSound.ogg",
         src:"lib/PlacedSound.ogg",
         id:"PlacedSound",
         data:4
     },
     {
-        //src:"lib/PlacedSound.mp3|lib/PlacedSound.ogg",
         src:"lib/SnappedSound.ogg",
         id:"SnappedSound",
         data:4
